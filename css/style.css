@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, yellow, orange);
+}
+.calculator_container .calculator {
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: right;
+  position: relative;
+  background-color: white;
+}
+.calculator_container .calculator .btn_theme {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.calculator_container .calculator .display {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: yellow;
+}
+.calculator_container .calculator .btn-number {
+  font-size: 1.5rem;
+  background-color: lightblue;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.calculator_container .calculator .btn-operator {
+  font-size: 1.5rem;
+  background-color: pink;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.calculator_container .calculator .btn-equal {
+  font-size: 1.5rem;
+  background-color: orange;
+  border: none;
+  border-radius: 50%;
+  padding: 2.5rem 1rem;
+  width: 60px;
+  height: 115px;
+  cursor: pointer;
+}
+
+.calculator_container.dark {
+  background: linear-gradient(to bottom right, rgb(255, 8, 0), rgb(255, 0, 200));
+}
+.calculator_container.dark .calculator {
+  background-color: black;
+}
+.calculator_container.dark .calculator .btn_theme {
+  background-color: white;
+  cursor: pointer;
+}
+.calculator_container.dark .calculator .display {
+  background-color: pink;
+}
+.calculator_container.dark .calculator .btn-number {
+  background-color: blue;
+}
+.calculator_container.dark .calculator .btn-equal {
+  background-color: red;
+}
+.calculator_container.dark .calculator .btn-operator {
+  background-color: orange;
+}/*# sourceMappingURL=style.css.map */
